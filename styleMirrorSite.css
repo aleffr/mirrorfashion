@@ -55,7 +55,7 @@ header {
 
 .busca,
 .menu-departamentos {
-  background-image: linear-gradient(45deg, #A770EF 5%, #CF8BF3 40%, #FDB99B 80%);
+  background-image: linear-gradient(45deg, #A770EF 6%, #CF8BF3 40%, #FDB99B 80%);
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 10px;
