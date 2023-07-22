@@ -3,7 +3,7 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  width: 942;
 }
 
 header {
@@ -15,9 +15,10 @@ header {
   height: 15%;
 }
 
-.container {
+.container,
+.cores {
   margin: 0 auto;
-  width: 940px;
+  width: 942px;
 }
 
 .sacola {
@@ -64,6 +65,12 @@ header {
   margin-right: 10px;
   width: 230px;
   float: left;
+}
+
+.banner-destaque figure img {
+  width: 51%;
+  height: auto;
+  margin-left: 80px;
 }
 
 .menu-opcoes {
@@ -134,15 +141,15 @@ figure img {
 
 .painel {
   margin: 10px 0px;
-  padding: 10px;
-  width: 446px;
+  padding: 5px;
+  width: 448px;
   box-shadow: inset 0 0 40px rgb(187, 144, 144)
 }
 
 .painel li {
   display: inline-block;
   vertical-align: top;
-  width: 140px;
+  width: 139px;
   margin: 2px;
   padding-bottom: 10px;
 }
@@ -168,10 +175,6 @@ figure img {
   box-shadow: 0 0 5px #333;
   transition: 0.6s;
   transform: scale(1.05);
-}
-
-.banner-destaque {
-  margin-top: 0;
 }
 
 .novidades {
@@ -242,11 +245,12 @@ footer .container {
   .container {
     width: 96%;
   }
-  .container img{
+
+  .container img {
     width: 46%;
   }
 
-  .busca img{
+  .busca img {
     width: 13px;
   }
 
@@ -280,16 +284,16 @@ footer .container {
     width: 100%;
   }
 
-  .banner-destaque img{
+  .banner-destaque img {
     width: 100%;
     min-height: 299px;
   }
 
-  .busca{
+  .busca {
     margin-top: 40px;
   }
 
-  .busca h2{
+  .busca h2 {
     font-size: 25px;
   }
 
@@ -300,15 +304,44 @@ footer .container {
   .painel li {
     width: 30%;
   }
-  .painel img{
+
+  .painel img {
     width: 100%;
   }
-  .rodape img{
+
+  .rodape img {
     width: 27%;
   }
 
-  .social{
+  .social {
     margin: -10px 1px;
   }
 
+  @media (min-width: 720px) {
+    header h1 {
+      text-align: left;
+    }
+
+    .menu-opcoes {
+      position: absolute;
+    }
+
+    .sacola {
+      display: block;
+    }
+
+    .painel li {
+      width: 15%;
+    } 
+
+    .busca,
+    .menu-departamentos {
+      margin-right: 1%;
+      width: 30.381%;
+    }
+
+    .menu-departamentos nav>ul {
+      column-count: 1;
+    }
+  }
 }
